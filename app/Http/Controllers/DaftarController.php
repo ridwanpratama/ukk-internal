@@ -18,7 +18,6 @@ class DaftarController extends Controller
     {
         $request->validate([
             'user_id' => 'required',
-            'no_reg' => 'required',
             'nama' => 'required',
             'jk' => 'required',
             'agama' => 'required',
@@ -31,8 +30,6 @@ class DaftarController extends Controller
     public function store(Request $request)
     {
         $this->validation($request);
-
-        
 
         Registrasi::create([
             'user_id' => $request->user_id,

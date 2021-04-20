@@ -11,13 +11,6 @@
                             @csrf
                             <input type="hidden" value="{{ Auth()->user()->id }}" name="user_id">
 
-                            <div class="form-group">
-                                <label for="no_reg">No Registrasi</label>
-                                <input type="number" class="form-control" id="no_reg" name="no_reg" @error('no_reg')
-                                    placeholder="{{ $message }}"
-                                @enderror>
-                              </div>
-
                               <div class="form-group">
                                 <label for="nama">Nama</label>
                                 <input type="text" class="form-control" id="nama" name="nama" @error('nama')

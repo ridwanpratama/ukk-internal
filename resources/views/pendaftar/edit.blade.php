@@ -12,9 +12,9 @@
                             @method('PUT')
                             <div class="form-group">
                                 <label for="no_reg">No Registrasi</label>
-                                <input type="number" class="form-control" id="no_reg" name="no_reg" value="{{ $pendaftar->no_reg }}" @error('no_reg')
+                                <input type="text" class="form-control" id="no_reg" name="no_reg" value="{{ $pendaftar->no_reg }}" @error('no_reg')
                                     placeholder="{{ $message }}"
-                                @enderror>
+                                @enderror readonly>
                               </div>
 
                               <div class="form-group">

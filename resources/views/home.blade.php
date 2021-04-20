@@ -12,9 +12,9 @@
                                 <?php
                                 $if_null = App\Registrasi::where('user_id', '=', Auth::user()->id)->first();
                                 if (is_null($if_null)) { ?>
-                                <li class="list-group-item"><a href="{{ route('daftar.index') }}"> Daftar Baru</a></li>
+                                    <li class="list-group-item"><a href="{{ route('daftar.index') }}"> Daftar Baru</a></li>
                                 <?php } else { ?>
-                                <li class="list-group-item"><a href="#"> Anda sudah terdaftar</a></li>
+                                    <li class="list-group-item"><a href="#"> Anda sudah terdaftar</a></li>
                                 <?php }
                                 ?>
                                 <li class="list-group-item"><a href="{{ route('daftar.info') }}"> Data Saya</a></li>
